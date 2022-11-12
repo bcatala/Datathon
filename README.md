@@ -1,48 +1,22 @@
-# Datathon
+# BIBI
+## Bussines Intelligence By Inspection
 
-Datathon 2022 - UPC - Supply Chain Resilience
-2022-11-12
+This repository is our submission for the Accenture Datathon challenge 2022.
 
-Challenge
-Understand main root-cause affecting supply chain deliveries and predict product delays based on historical inbound/outbound orders of the company. Providing visibility of supply chain resiliency to maximize customer service levels
+## Authors 
 
-What is it expected from the technical challenge?
+Víctor Aguado (www.linkedin.com/in/vaguado)
+Bernat Català (www.linkedin.com/in/vaguado)
+Joan Pau Gutierrez (www.linkedin.com/in/vaguado)
 
-Provide data insights based on descriptive analytics of historical data
-Regression model to predict likelihood of order delay
-Evaluation Criteria
-What will be measured?
+## Summary
 
-Business case presentation outlining descriptive insights of main drivers’ toward order delays. How those insights can be translated to business actions and value proposition.
+This project consists con providing BI over the orders supply chain of a company. We also deliver a Stadistical Model for predicting late deliveries based on geographical data as well as product characteristics and order attributes. We achive about 74% of AUC and 78% acc on training and testing sets. 
 
-Predictive model to get likelihood of order delay. ROC Curve (AUC) evaluation metric for given test data set. A Kaggle Competition have been created for teams to submit and test their model results. Please sign-up to the competition and follow the instructions
+We also provide a power BI dashboard to inspect the general aspects of the dataset. 
 
-Data
-orders.csv
-Transactional historical data of the company supply chain inbound/outbound shipments
+At the end, we provide a Bussines presentation on how to optimize the supply chain based on Data Driven Solutions.
 
-order_id (string): unique identifier of transactional order from port inbound to final destination. Primary key of data set.
-origin_port (string): location of port where order imports arrives.
-3pl (string): Third-party logistic company id used for distribution, warehousing, and fulfillment services.
-customs_procedure (string): Type of procedure to be used in the imports legal process
-logistic_hub (string): city name of company logistic hub address. Intermediate step between origin_port and customer
-customer (string): city name of customer destination address
-product_id (string): unique identifier of final product
-units (integer): order size quantity
-late_order (boolean): target variable, if 1 the order_id have been tagged as a late delivery, 0 is on-time
-product_attributes.csv
-Master data of product unit weight
+<img width="838" alt="Captura de Pantalla 2022-11-12 a las 22 12 38" src="https://user-images.githubusercontent.com/115171304/201494750-696d2f8e-ae32-4609-8abb-3304d530de8e.png">
 
-product_id (string): unique identifier of final product
-weight (integer): product weight per 1 unit in grams
-material_handling (integer): Classification id for product safety risk and risk of damage e.g. fragile, toxic, flammable.
-cities_data.csv
-Geographic coordinates of cities involve in the supply chain. Including distance between pair of cities
 
-city_from_name (string): City of location starting point
-city_to_name (string): City of destination location
-city_from_coord (tuple): Coordinates in (latitude, longitude) of city_from
-city_to_coord (tuple): Coordinates in (latitude, longitude) of city_to
-distance (float): kilometers between the pair cities
-test.csv
-Same as orders.csv but variable late_order has been truncated. This is the target variable
