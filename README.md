@@ -6,8 +6,8 @@ This repository is our submission for the Accenture Datathon challenge 2022.
 ## Authors 
 
 Víctor Aguado (www.linkedin.com/in/vaguado)
-Bernat Català (www.linkedin.com/in/vaguado)
-Joan Pau Gutierrez (www.linkedin.com/in/vaguado)
+Bernat Català (www.linkedin.com/in/bernat-catala-ulied)
+Joan Pau Gutierrez (www.linkedin.com/in/joan-pau)
 
 ## Summary
 
